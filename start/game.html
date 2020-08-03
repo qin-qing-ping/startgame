@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style type="text/css">
+			canvas{
+				background-image: url(./img/bgimg.jpg);
+			}
+			img{
+				display: none;
+			}
+		</style>
+	</head>
+	<body>
+		<!-- 键盘上键跳起来 -->
+		
+		<canvas id="mycanvas" width="900" height="500"></canvas>
+		<img id="bg" src="img/bgimg.jpg" >
+		
+		<img id='gameover' src="img/gameover.png"  >
+		<img id='guaiwu' src="img/guaiwu.png" >
+		<img id="role" src="img/mario.png" >
+		<img id="mogu" src="img/mogu.png" >
+		<img id="money" src="img/money.png" >
+		<img id='begin' src="img/begin.jpg" >
+		
+		<script src="" type="text/javascript" charset="utf-8"></script>
+		<script src="Main.js" type="text/javascript" charset="utf-8"></script>
+		<script src="Bg.js" type="text/javascript" charset="utf-8"></script>
+		<script src="Data.js" type="text/javascript" charset="utf-8"></script>
+		<script src="Role.js" type="text/javascript" charset="utf-8"></script>
+		<script src="eat.js" type="text/javascript" charset="utf-8"></script>
+		<script src="Gui.js" type="text/javascript" charset="utf-8"></script>
+		<script src="grade.js" type="text/javascript" charset="utf-8"></script>
+		<script src="Director.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			window.onload = function(){
+				let main = new Main();
+				main.begin();
+				main.init();
+			}
+		</script>
+	</body>
+</html>
